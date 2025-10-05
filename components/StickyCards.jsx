@@ -7,7 +7,6 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRef } from 'react';
 
-// 🔑 wajib register plugin sebelum dipakai
 gsap.registerPlugin(ScrollTrigger);
 
 const StickyCards = () => {
@@ -42,6 +41,7 @@ const StickyCards = () => {
 
               gsap.set(card, {
                 scale,
+                // borderRadius: progress * 50,
                 rotation,
                 '--after-opacity': afterOpacity,
               });

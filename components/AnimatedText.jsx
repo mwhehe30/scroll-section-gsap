@@ -79,8 +79,9 @@ const AnimatedText = ({
 
       ScrollTrigger.create({
         trigger: containerRef.current,
+        // markers: true,
         start: 'top 90%',
-        end: 'top 10%',
+        end: 'top 30%',
         onUpdate: (self) => {
           const progress = self.progress;
           const totalChars = allChars.length;
