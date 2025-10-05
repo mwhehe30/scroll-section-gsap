@@ -1,0 +1,30 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}
+
+.about h1 {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.about p {
+  width: 35%;
+  margin: 0 auto;
+}
+
+.char {
+  transition: color 150ms ease-in-out;
+}
+
+@media (max-width: 1000px) {
+  .about h1 {
+    width: 100%;
+  }
+
+  .about p {
+    width: 100%;
+  }
+}
